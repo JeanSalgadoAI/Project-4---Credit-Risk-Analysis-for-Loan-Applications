@@ -1,0 +1,17 @@
+{
+  "number": 4,
+  "title": "Classificação de risco em dados financeiros sintéticos",
+  "mode": "classification",
+  "target": "default_risk",
+  "features": [
+    "age",
+    "annual_income",
+    "credit_score",
+    "num_transactions",
+    "savings_balance",
+    "loan_amount"
+  ],
+  "objective": "Construir um pipeline de classificação e avaliar uma classe positiva minoritária.",
+  "limitations": "O alvo foi gerado de forma independente dos atributos. Eventuais diferenças de desempenho neste recorte são variação amostral, não evidência de capacidade preditiva em produção. Não utilizar para decisões de crédito; client_id é apenas identificador sintético e fica fora do modelo.",
+  "data": "data/financial_data.csv"
+}
